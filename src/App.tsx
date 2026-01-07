@@ -3,7 +3,7 @@ import "./index.css";
 import "./responsive.css";
 import { Form } from "../components/Form.tsx";
 import type { DadosTarefa } from "../components/Form.tsx";
-import TypeTest from "./TypeTest.tsx";
+//import TypeTest from "./TypeTest.tsx";
 
 type CadastroTodo = {
   id: string;
