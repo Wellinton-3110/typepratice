@@ -1,19 +1,19 @@
 @media (max-width: 635px) {
   .h1Text {
-    width: 400px;
+    width: 380px;
     font-size: 35px;
   }
 }
 @media (max-width: 635px) {
   .divTarefas {
-    width: 400px;
+    width: 380px;
     font-size: 25px;
     padding: 7px;
   }
 }
 @media (max-width: 635px) {
   button {
-    width: 90px;
+    width: 87px;
     font-size: 15px;
     padding: 7px;
   }

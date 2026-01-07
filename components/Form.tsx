@@ -24,14 +24,14 @@ export const Form = ({ addPessoa }: FormProps) => {
   return (
     <div>
       <form
-        className="w-[400px] sm:w-[700px] ml-[50%] translate-x-[-50%] mt-[5%] bg-black/70 rounded-md p-2.5"
+        className="w-[380px] sm:w-[700px] ml-[50%] translate-x-[-50%] mt-[5%] bg-black/60 rounded-md p-2.5"
         onSubmit={handleSubmit(onSubmit)}
       >
         {/*--Nome--*/}
         <div className="flex flex-col">
           <label className="mb-0.5">Nome</label>
           <input
-            className="bg-black/70 rounded-2xl h-[35px] mb-1.5"
+            className="bg-white/20 rounded-2xl h-[35px] mb-1.5"
             type="text"
             {...register("nome", {
               required: { value: true, message: "Nome obrigatório" },
@@ -49,7 +49,7 @@ export const Form = ({ addPessoa }: FormProps) => {
         <div className="flex flex-col">
           <label className="mb-0.5">Tarefa</label>
           <input
-            className="bg-black/70 rounded-2xl h-[35px]"
+            className="bg-white/20 rounded-2xl h-[35px]"
             type="text"
             {...register("tarefa", { required: true })}
           />
