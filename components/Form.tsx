@@ -24,7 +24,7 @@ export const Form = ({ addPessoa }: FormProps) => {
   return (
     <div>
       <form
-        className="w-[700px] bg-black/70 mt-1.5 rounded-md p-2.5"
+        className="w-[400px] sm:w-[700px] ml-[50%] translate-x-[-50%] mt-[5%] bg-black/70 rounded-md p-2.5"
         onSubmit={handleSubmit(onSubmit)}
       >
         {/*--Nome--*/}

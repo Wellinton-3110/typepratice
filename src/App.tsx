@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./index.css";
+import "./responsive.css";
 import { Form } from "../components/Form.tsx";
 import type { DadosTarefa } from "../components/Form.tsx";
 import TypeTest from "./TypeTest.tsx";
@@ -75,11 +76,11 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col ml-[50vw] translate-x-[-50%]">
-        <h1 className="ml-[50%] translate-x-[-50%] w-[700px] text-center">
+      <div className="flex flex-col ml-[50vw] translate-x-[-50%] ">
+        <h1 className="h1Text ml-[50%] translate-x-[-50%] w-[700px] text-center">
           Tarefas Diárias
         </h1>
-        <ul className="border-amber-50 rounded-lg w-[700px] bg-black/50 p-3 gap-1 text-center">
+        <ul className="divTarefas border-amber-50 rounded-lg w-[700px] bg-black/50 p-3 gap-1 text-center">
           {pessoas.map((pessoa) => {
             return (
               <li className="flex gap-1 mt-2" key={pessoa.id}>
@@ -119,7 +120,7 @@ function App() {
         </ul>
         <Form addPessoa={addPessoa} />
       </div>
-      {<TypeTest />}
+      {/*  {<TypeTest />} */}
     </>
   );
 }
