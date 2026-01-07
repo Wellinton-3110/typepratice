@@ -11,9 +11,7 @@ type CadastroTodo = {
   concluido: boolean;
 };
 
-type addDeleteTarefa = {
-  excluirTarefa: (id: string) => void;
-};
+type addDeleteTarefa = (id: string) => void;
 
 function App() {
   const meuArray: CadastroTodo[] = [
@@ -26,7 +24,7 @@ function App() {
   ];
   const [pessoas, setPessoas] = useState<CadastroTodo[]>(meuArray);
 
-  const excluirTarefa: addDeleteTarefa = (id) => {
+  const excluirTarefa: addDeleteTarefa = (id: string) => {
     const newDeletePessoas = pessoas.filter((data) => {
       return data.id != id;
     });
@@ -52,7 +50,7 @@ function App() {
 
   console.log(arrayDeobjetos1.nome);
 
-  const concluirTarefa: addDeleteTarefa = (id) => {
+  const concluirTarefa: addDeleteTarefa = (id: string) => {
     const completeTarefa = pessoas.map((data) => {
       if (data.id === id) {
         return { ...data, concluido: !data.concluido };

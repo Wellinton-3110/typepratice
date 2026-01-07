@@ -1,4 +1,3 @@
-import { error } from "console";
 import { useForm } from "react-hook-form";
 
 export type DadosTarefa = {

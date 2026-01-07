@@ -64,22 +64,15 @@ const TypeTest = () => {
 
      const numeroOuLetra:<T> = T
 */
-  const [array, setArray] = useState<number[]>([1, 8, 6]);
+  const [array] = useState<number[]>([1, 8, 6]);
 
-  const minhaFuncao = <T>(array:T[]):T=>{
-    return array[0]
-    
-    } 
+  const minhaFuncao = <T,>(array: T[]): T => {
+    return array[0];
+  };
 
-    const n = minhaFuncao<number>([1,2,3])
+  const n = minhaFuncao<number>([1, 2, 3]);
 
-    console.log(n);
-    
-
-    
-
-
-    
+  console.log(n);
 
   return (
     <div>
@@ -87,7 +80,6 @@ const TypeTest = () => {
         return (
           <li key={index} className="text-white text-[30px] ml-[150%]">
             {element}
-
           </li>
         );
       })}
