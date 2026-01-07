@@ -45,7 +45,7 @@ export const Form = ({ addPessoa }: FormProps) => {
             <p className="text-red-500 ">{errors.nome.message}</p>
           )}
         </div>
-        {/*--Tarefa--*/}
+        {/*---Tarefa---*/}
         <div className="flex flex-col">
           <label className="mb-0.5">Tarefa</label>
           <input
